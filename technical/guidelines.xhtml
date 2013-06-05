@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" /><title>General Guidelines</title>
+
+</head>
+<body>
+<h1>1. &nbsp;General Guidelines</h1>
+The question of how to edit and deploy the documentating being
+developed here has not been addressed at this time. &nbsp;Ideally,
+the development process could support multiple tools, which would allow
+each author to decide for themselves. &nbsp;However, that could
+also lead to chaos. &nbsp;Rather than picking a tool, this document
+describes some guildlines that should be followed to simplify the
+authoring, management, and deployment process later (to be defined).<br />
+<br />
+<h2>1.1 &nbsp;Markup - XHTML</h2>
+All documents should be marked up using XHTML. &nbsp;While this
+does add a bit more work, the advantages are considerable.
+&nbsp;Using XHTML allows documents created to be parsed using XML
+tools such as SAX. &nbsp;Parsable documents can be later processed
+by (TBD) scripts to create deployable forms of the documentation.<br />
+<br />
+<h2>1.2 &nbsp;Layout - Numbered Sections</h2>
+Documents should be sectioned using standard HTML section tags:
+&nbsp;H1, H2, etc. &nbsp;Documents may have more than one top
+level section. &nbsp;Good use of sectioning improves accessibility.
+&nbsp;Numbering provides support for referencing.<br />
+<br />
+<h2>1.3 &nbsp;Styling</h2>
+In it's raw form, technical documentation should reference any style
+sheet. &nbsp;Eventually, we might create one for convenience or
+provide a way to preview different kinds of style. &nbsp;Until we
+do, don't bother with global styling. &nbsp;Text styling for
+emphasis is a different matter. &nbsp;Embedded style can be used
+appropriately. &nbsp;More detailed guidelines on this will be
+developed at a later date.<br />
+<h2>1.4 &nbsp;Use of Illustrations and Examples</h2>
+The use of illustrations in technical documents is strongly encouraged.
+All illustrations should be stored in a directory called "images".
+&nbsp;Image formats should be restricted to JPEG or PNG, with PNG
+preferred.<br />
+<br />
+<h3>1.4.1 &nbsp;Screen Shots</h3>
+Screen shots should be cropped to show the specific area of interest.
+&nbsp;Screen shot images should be no wider than 800 pixels.
+&nbsp;If a larger image is needed, it should be scaled down to 800
+pixels for display. &nbsp;Most browsers support clicking on the
+image to enlarge it.<br />
+<h3>1.4.2 &nbsp;Graphics</h3>
+Artistic illustrations, charts, diagrams, etc. are subject to the same
+restrictions above. <br />
+<h3>1.4.3 &nbsp;Code Samples</h3>
+Code samples should be formatted using the &lt;PRE&gt; tag.<br />
+<h2>1.5 &nbsp;Authors</h2>
+At the bottom of each page, include an element of the following form:<br />
+<br />
+&nbsp;&nbsp;&nbsp; &lt;div id="author"&gt;Mark
+Norton, Glen Golden&lt;/div&gt;<br />
+<br />
+The primary author should be listed first, followed by other
+contributors, even editors. &nbsp;This special element allows
+authors to be identified and credited.<br />
+<h2>1.6 &nbsp;Sakai Versioning</h2>
+At the bottom of the page, include an element of the following form:<br />
+<br />
+&nbsp;&nbsp;&nbsp; &lt;div
+id="version"&gt;2.9&lt;/div&gt;<br />
+<br />
+The &nbsp;first Sakai version that this text applies to should be
+identified. &nbsp;If changes to Sakai require a change in the
+technical documentation, enter the most recent verison number instead.
+&nbsp;Source control will allow us to create tagged doc sets for
+older versions of Sakai using this technique. &nbsp;If the verision
+is unknown, use "0.0".
+<h2>1.7 &nbsp;Copyright</h2>
+Since this documentation effort is a collaboration between the members
+of the Sakai technical community, &nbsp;all rights to this material
+is donated to the Apereo Foundation under the terms of the Apereo
+Contributor Licese Agreement (CLA). &nbsp;All contributors to this
+technical documentation MUST have a CLA on file with Apereo before they
+contribute. &nbsp;Likely, documentation will ge distributed under a
+Creative Commons License, such as "cc-by".<br />
+<br />
+<div id="author">Mark J. Norton</div><br />
+<div id="verison">0.0</div><br />
+<br />
+<br />
+<br />
+</body>
+</html>
